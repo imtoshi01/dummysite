@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Site</title>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'de'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DZ60000008bYS',
+				'MIAW_Embedded_Service',
+				'https://esw.test1.my.pc-rnd.site.com/ESWMIAWEmbeddedService1712265306771',
+				{
+					scrt2URL: 'https://esw.test1.my.pc-rnd.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://esw.test1.my.pc-rnd.site.com/ESWMIAWEmbeddedService1712265306771/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple site deployed on GitHub Pages.</p>
+</body>
+</html>
